@@ -1,0 +1,99 @@
+/* loading spinner 1 */
+#cover-spin {
+    position:fixed;
+    width:100%;
+    left:0;right:0;top:0;bottom:0;
+    background-color: rgba(255,255,255,0.7);
+    z-index:9999;
+    display:none;
+}
+
+@-webkit-keyframes spin {
+	from {-webkit-transform:rotate(0deg);}
+	to {-webkit-transform:rotate(360deg);}
+}
+
+@keyframes spin {
+	from {transform:rotate(0deg);}
+	to {transform:rotate(360deg);}
+}
+
+#cover-spin::after {
+    content:'';
+    display:block;
+    position:absolute;
+    left:48%;top:40%;
+    width:40px;height:40px;
+    border-style:solid;
+    border-color:black;
+    border-top-color:transparent;
+    border-width: 4px;
+    border-radius:50%;
+    -webkit-animation: spin .8s linear infinite;
+    animation: spin .8s linear infinite;
+}
+
+
+/* loading spinner 2 */
+#animation-5
+{
+    position:fixed;
+    width:100%;
+    left:0;right:0;top:0;bottom:0;
+    background-color: rgba(255,255,255,0.7);
+    z-index:9999;
+    display:none;
+}
+
+#animation-5 .table-cell
+{
+    display:block;
+    position:absolute;
+    left:47%;top:39%;
+    width:150px;height:100px;
+}
+
+#animation-5 .bar
+{
+    height:30px;
+    width:10px;
+    background-color: #005AA2;
+    display:inline-block;
+    margin-right:10px;
+    -webkit-animation: animation5-bar 1s infinite;
+    animation: animation5-bar 1s infinite;
+}
+
+#animation-5 .bar1
+{
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+#animation-5 .bar2
+{
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+#animation-5 .bar3
+{
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+#animation-5 .bar4
+{
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+#animation-5 .bar5
+{
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+}
+
+@keyframes animation5-bar
+{
+    30%
+    {
+        transform: scaleY(2);
+    }
+}
